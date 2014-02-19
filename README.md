@@ -1,29 +1,7 @@
-# Rdf::Fuseki
+# RDF::Fuseki
 
-TODO: Write a gem description
+A very minimal `RDF::Repository` implementation for Fuseki.
 
-## Installation
+Initialize the repository like:
 
-Add this line to your application's Gemfile:
-
-    gem 'rdf-fuseki'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install rdf-fuseki
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    repo = RDF::Fuseki::Repository.new('http://localhost:3030/', { :dataset => '/ds' })
